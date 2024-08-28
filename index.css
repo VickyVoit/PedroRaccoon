@@ -1,0 +1,41 @@
+.body {
+    background-color: rgb(129, 33, 33);
+}
+
+.circle-container  {
+    width: 500px;
+    height: 500px;
+    overflow:hidden;
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    top: 100px;
+    left:450px;
+    background-color: black;
+    align-items:center;
+    border: 5px solid;
+    border-color:rgb(235, 163, 163);
+    box-shadow: white;
+    animation: sparkle 3s infinite ease-in-out;
+}
+
+.pedro {
+    width: 270%;
+    height: 112%;
+}
+
+@keyframes bounce {
+    to { translate: 0 20px; }
+}
+.pedro {
+    animation:bounce 200ms
+        linear infinite alternate;
+}
+@keyframes spin {
+    to { rotate: -1turn; }
+}
+.circle {
+    animation: spin 10s 
+        linear infinite;
+}
